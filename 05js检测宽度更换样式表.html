@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "
+http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+   <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" id="viewport"/>
+  <link id="mylink" rel="stylesheet" href="css/1.css" type="text/css" />
+  <script type="text/javascript">
+  //更换样式表，需要在页面加载的时候执行一次
+  //在浏览器尺寸变化的时候，也要执行
+
+	gaibian();//一上来，就执行一次gaibian函数，保证页面默认情况就显示合理的样式表
+	window.onresize=gaibian;
+	function gaibian(){
+		var kuandu=document.documentElement.clientWidth;//浏览器的宽度
+		if(kuandu>600){
+			document.getElementById("mylink").href="css/1.css";
+		}else{
+			document.getElementById("mylink").href="css/2.css";
+		}
+	}
+
+  </script>
+   
+ </head>
+ <body>
+
+	
+
+ </body>
+</html>

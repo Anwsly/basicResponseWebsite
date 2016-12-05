@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "
+http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	body,div,p{
+		margin:0;
+		padding:0;
+	}
+	div{
+		width:500px;
+		height:200px;
+		background:blue;
+	
+	}
+	.p1{
+		/*现在，这个盒子的实际宽度是252px*/
+		width:50%;
+		background:yellow;
+		float:left;
+		height:100px;
+		border:1px solid red;
+		box-sizing:border-box;	
+		/*现在盒子的实际宽度，就是250px，盒子的width值会內减*/
+	}
+	.p2{	
+		/*现在，这个盒子的实际宽度是252px*/
+		width:50%;
+		height:100px;
+		background:green;
+		float:left;
+		border:1px solid red;
+		box-sizing:border-box;
+	}
+  </style>
+ </head>
+ <body>
+  	<div>
+		<p class="p1"></p>
+		<p class="p2"></p>
+	</div>
+ </body>
+</html>
